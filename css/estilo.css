@@ -1,0 +1,208 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+/* ================== Header ================== */
+header {
+    text-align: center;
+    font-size: 28px;
+    background-color: #e7eee8;
+    padding-bottom: 40px;
+}
+
+header a {
+    background-color: #293e20;
+    padding: 10px 20px;
+    
+    /* visual do link */
+    color:white;
+    text-decoration: none;
+}
+
+/* ================== Nav ================== */
+nav {
+    background-color: #293e20;
+    height: 100px;
+
+}
+
+.mainNav ul{
+    list-style:none;
+    float: right;
+    /* text-align: right; */
+    padding-top: 35px;
+    padding-right: 50px;
+}
+
+.mainNav ul li { display: inline; }
+
+.mainNav ul li a {
+    padding: 10px 20px;
+    
+    /* visual do link */
+    color:white;
+    text-decoration: none;
+    
+}
+
+.mainNav ul li a:hover {
+    background-color:#46d2576b;
+    
+}
+
+
+#tituloLogo {
+    color: white;
+    float: left;
+    margin-top: 33px;
+    margin-left: 15px;
+}
+.mainNav img{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+/* ================== Main ================== */
+main {
+    padding: 30px 0px;
+    text-align: center;
+    align-items: center;
+}
+
+main h1 {
+    font-size: 38px;
+}
+
+main p {
+    /* text-align: justify; */
+    padding: 10px 0px;
+}
+
+main span {
+    font-size: 60px;
+    color: #3ebfa6;
+}
+
+.card {
+    margin-top: 30px;
+    height: auto;
+    min-height: 300px;
+    
+}
+.card:hover {
+    background-color: #e7eee8eb;
+    border-bottom: solid 8px #3ebfa6;
+    border-radius: 20px;
+    /* box-shadow: 0px 0px 20px #1212128c ; */
+}
+
+#quem_somos h1 {
+    padding: 30px;
+  
+    /* border-bottom: solid 8px #3ebfa6; */
+
+    position: relative;
+    animation-name: chegadaTitulo;
+    animation-duration: 2s;
+}
+
+
+@keyframes chegadaTitulo {
+    0% {right: 600px; top: 0px}
+    100% {right: 0px; top: 0px}
+   
+}
+
+#quem_somos hr {
+    margin: 0 30%;
+    height: 10px;
+    background-color: #3ebfa6;
+    
+}
+
+
+.galeria {
+    margin: 5px;
+    float: left;
+    width: 180px;
+
+    position: relative;
+    animation-name: chegadaImagens;
+    animation-duration: 2s;
+}
+
+@keyframes chegadaImagens {
+    0% {left: 600px; top: 0px}
+    100% {left: 0px; top: 0px}
+   
+}
+
+.galeria:hover {
+    -webkit-filter:grayscale(1000%);
+    box-shadow: 0px 0px 20px #1212128c ;
+    transform: rotate(6deg);
+    transition: 1s;
+}
+
+.galeria:hover .desc{
+    display: block;
+}
+div.galeria img {
+    width: 100%;
+    height: 170px;
+}
+
+.desc {
+    padding: 10px;
+    text-align: center;
+    display: none;
+}
+
+
+
+/* ================== Footer ================== */
+footer {
+    text-align: center;
+    background-color: #293e20;
+    padding: 30px;
+    color: whitesmoke;
+}
+
+footer a {
+    color: whitesmoke;
+}
+
+
+
+
+/* ================== Responsividade ================== */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /* border: 1px solid black; */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
